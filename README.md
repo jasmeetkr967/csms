@@ -8,17 +8,17 @@ If needed, we can move them to separate repos, I am using the same repo for the 
 
 Features
 
-Authorization Service: Determines driver authorization status.
+1. Authorization Service: Determines driver authorization status.
 
-Transaction Service: Handles authorization requests and integrates with Kafka for asynchronous processing.
+2. Transaction Service: Handles authorization requests and integrates with Kafka for asynchronous processing.
 
-Kafka Integration: Used for decoupled and scalable event-driven communication.
+3. Kafka Integration: Used for decoupled and scalable event-driven communication.
 
-Unit & Integration Tests: Implemented using JUnit, Mockito, and Spring Boot Test.
+4. Unit & Integration Tests: Implemented using JUnit, Mockito, and Spring Boot Test.
 
-Docker Support: Simplifies deployment and execution.
+5. Docker Support: Simplifies deployment and execution.
 
-Maven: To run and build the project
+6. Maven: To run and build the project
 
 Setup Guide
 
@@ -81,10 +81,44 @@ request body raw type json
 }
 and run
 
-It should give valid response
+It should give a valid response
 
 
+Improvement Scope
 
+1. Security Enhancements
+
+   Implement JWT-based authentication for API access.
+
+   Introduce role-based access control (RBAC) to restrict actions.
+
+   Validate Station Ids
+
+3. Scalability & Performance Improvements
+
+   Kafka Consumer Optimization: Implement batching and consumer parallelization.
+
+   Database Integration with better databse and structure 
+
+   Load Testing: Perform stress tests to analyze system behavior.
+
+4. Additional Features
+
+  API Gateway: Integrating API gateway for Load balancing and URL redirection
+
+  Open AI and Swagger Implementation: To get a UI view of the API and the structure
+
+  Audit Logging: Maintain logs for all authorization requests.
+
+  Retry Mechanism: Implement a retry mechanism for Kafka messages.
+
+  Dashboard Integration: Develop a UI for monitoring authorization requests using tools like Prometheus and Grafana
+
+4. Deployment Enhancements
+
+  Kubernetes Support: Deploy microservices on a Kubernetes cluster.
+
+  CI/CD Pipeline: Automate builds and deployments using GitHub Actions.
 
 
 
