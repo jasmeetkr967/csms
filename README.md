@@ -75,20 +75,24 @@ Improvement Scope
    Implement JWT-based authentication for API access.
    Introduce role-based access control (RBAC) to restrict actions.
    Validate Station Ids
+2. Testing Enhancements
+   Increase Test Cases coverage by adding consumer and producer classes test cases and Integration Testing.
+   We can refer to the following link for Testing Kafka and Spring Boot
+   https://www.baeldung.com/spring-boot-kafka-testing
 
-2. Scalability & Performance Improvements
+4. Scalability & Performance Improvements
    Kafka Consumer Optimization: Implement batching and consumer parallelization.
    Database Integration with a better database and structure 
    Load Testing: Perform stress tests to analyze system behavior.
 
-3. Additional Features
+5. Additional Features
    API Gateway: Integrating API gateway for Load balancing and URL redirection
    Open AI and Swagger Implementation: To get a UI view of the API and the structure
    Audit Logging: Maintain logs for all authorization requests.
    Retry Mechanism: Implement a retry mechanism for Kafka messages.
    Dashboard Integration: Develop a UI for monitoring authorization requests using tools like Prometheus and Grafana
 
-3. Deployment Enhancements
+6. Deployment Enhancements
    Kubernetes Support: Deploy microservices on a Kubernetes cluster.
    CI/CD Pipeline: Automate builds and deployments using GitHub Actions.
 
